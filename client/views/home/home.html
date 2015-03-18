@@ -4,16 +4,18 @@
     <h1 class="title">Home</h1>
   {{/contentFor}}
 
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear">Filter</button>
+  {{/contentFor}}
 
-  <!-- data-nav-direction="back" -->
-
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear">List</button>
+  {{/contentFor}}
 
   {{#ionView}}
     {{#ionContent}}
 
-      {{#ionItem}}
-        <p>Content goes here</p>
-      {{/ionItem}}
+      <div class="mapbox-map" id="map"></div>
 
     {{/ionContent}}
   {{/ionView}}
